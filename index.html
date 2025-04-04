@@ -3,73 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shubh Agarwal | Finance & Risk Management</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Shubh Agarwal - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header>
-            <h1>Shubh Agarwal</h1>
-            <p>BBA Student | Aspiring Finance & Risk Management Professional</p>
-            <img src="profile.jpg" alt="Shubh Agarwal" width="150">
-        </header>
 
-        <!-- About Section -->
-        <section class="section">
-            <h2>About Me</h2>
-            <p>
-                I am a <strong>2nd-year BBA student</strong> passionate about 
-                <strong>finance, investment banking, and risk management</strong>. 
-                Currently interning at <strong>Reliance Trends</strong>, I specialize in 
-                <em>product analysis, financial modeling, and risk assessment.</em>
-            </p>
-        </section>
-
-        <!-- Experience Section -->
-        <section class="section">
-            <h2>Experience</h2>
-            <ul>
-                <li><strong>Intern, Reliance Trends</strong> (Aug 2024 - Oct 2024)</li>
-                <p>Worked on product analysis for Reliance Retail Limited, Kolkata.</p>
-            </ul>
-        </section>
-
-        <!-- Education Section -->
-        <section class="section">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Garden High School</strong> (2021 - 2023)</li>
-                <li><strong>Institute of Business Management and Research (IBMR)</strong> (2023 - 2027)</li>
-            </ul>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li>Financial Analysis & Data Interpretation</li>
-                <li>Risk Management & Valuation</li>
-                <li>Excel, Python, SQL for Finance</li>
-            </ul>
-        </section>
-
-        <!-- Projects Section -->
-        <section class="section">
-            <h2>Projects & Achievements</h2>
-            <ul>
-                <li>Developed a <strong>Financial Risk Assessment Model</strong> using Python</li>
-                <li>Analyzed market trends for <strong>investment banking case study</strong></li>
-                <li>Won 2nd place in <strong>Business Strategy Competition</strong> (2024)</li>
-            </ul>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="section">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:shubh@example.com">shubh@example.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/shubhagarwal2005/" target="_blank">Visit My Profile</a></p>
-        </section>
+    <!-- Profile Section -->
+    <div class="profile">
+        <img src="image.png" alt="Shubh Agarwal" class="profile-pic">
+        <h1>Shubh Agarwal</h1>
+        <p>BBA Student | Aspiring Finance & Risk Management Professional</p>
+        <a href="https://www.linkedin.com/in/shubhagarwal2005/" target="_blank" class="linkedin-btn">LinkedIn</a>
     </div>
+
+    <!-- About Me Section -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I am a 2nd-year BBA student passionate about finance, investment banking, and risk management. I aim to enter high-paying finance roles and specialize in risk management.</p>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Institute of Business Management and Research (IBM)</strong> - BBA Finance (2023 - 2027)</li>
+            <li><strong>Garden High School</strong> - High School (2021 - 2023)</li>
+        </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Financial Analysis & Data Interpretation</li>
+            <li>Investment Banking Fundamentals</li>
+            <li>Risk Management & Compliance</li>
+            <li>Microsoft Excel & Financial Modeling</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="messageStatus"></p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
