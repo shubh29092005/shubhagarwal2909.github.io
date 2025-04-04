@@ -1,4 +1,4 @@
-/* Reset Default Styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,25 +8,28 @@
 
 /* Body Styling */
 body {
-    background-color: #121212; /* Dark Mode */
-    color: #ffffff;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    background-color: #1f1f1f;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
     text-align: center;
 }
 
-/* Header Section */
-.header {
-    background-color: #1f1f1f;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-}
-
-/* Profile Image */
 .profile-img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     border: 3px solid #00ffcc;
-    margin-top: 10px;
     object-fit: cover;
 }
 
@@ -41,31 +44,38 @@ body {
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
+    font-size: 1rem;
 }
 
 .social-links a:hover {
     text-decoration: underline;
 }
 
-/* Sections */
+/* Section Styling */
 .section {
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px 0;
+    padding: 30px;
     background-color: #1a1a1a;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+    text-align: left;
 }
 
+/* Headings */
 .section h2 {
     color: #00ffcc;
     margin-bottom: 10px;
 }
 
-/* Skills List */
+/* Skills Section */
 .skills ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .skills li {
@@ -73,11 +83,11 @@ body {
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
-    display: inline-block;
     font-size: 1rem;
+    display: inline-block;
 }
 
-/* Button Styling */
+/* Button */
 button {
     padding: 10px 20px;
     margin: 10px;
@@ -102,8 +112,9 @@ button:hover {
 /* Footer */
 .footer {
     background-color: #1f1f1f;
-    padding: 10px;
+    padding: 15px;
     width: 100%;
+    text-align: center;
     position: fixed;
     bottom: 0;
     font-size: 0.9rem;
@@ -116,8 +127,9 @@ button:hover {
         height: 80px;
     }
 
-    .header h1 {
-        font-size: 1.5rem;
+    .section {
+        width: 95%;
+        padding: 20px;
     }
 
     button {
