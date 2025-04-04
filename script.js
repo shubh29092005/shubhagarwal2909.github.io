@@ -1,10 +1,9 @@
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    
-    document.getElementById("messageStatus").textContent = "Thank you! Your message has been sent.";
-    document.getElementById("messageStatus").style.color = "lightgreen";
-
-    setTimeout(() => {
-        document.getElementById("messageStatus").textContent = "";
-    }, 3000);
+// Contact button functionality
+document.getElementById("contactBtn").addEventListener("click", function() {
+    var contactText = document.getElementById("contactText");
+    if (contactText.classList.contains("hidden")) {
+        contactText.classList.remove("hidden");
+    } else {
+        contactText.classList.add("hidden");
+    }
 });
