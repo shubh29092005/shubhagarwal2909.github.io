@@ -33,3 +33,14 @@ a:hover {
     margin-bottom: 20px;
     box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1);
 }
+
+.section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-in-out;
+}
+
+.section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
