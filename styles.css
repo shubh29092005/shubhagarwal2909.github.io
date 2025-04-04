@@ -1,40 +1,46 @@
-/* General Reset */
+/* Reset Default Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-    transition: all 0.3s ease-in-out;
+    font-family: Arial, sans-serif;
 }
 
-/* Body */
+/* Body Styling */
 body {
-    background-color: #121212;
-    color: white;
+    background-color: #121212; /* Dark Mode */
+    color: #ffffff;
     text-align: center;
 }
 
-/* Header */
+/* Header Section */
 .header {
     background-color: #1f1f1f;
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
 }
 
+/* Profile Image */
 .profile-img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     border: 3px solid #00ffcc;
-    margin: 10px;
+    margin-top: 10px;
+    object-fit: cover;
 }
 
 /* Social Links */
+.social-links {
+    margin-top: 10px;
+}
+
 .social-links a {
     color: #00ffcc;
     margin: 10px;
     text-decoration: none;
     font-weight: bold;
+    display: inline-block;
 }
 
 .social-links a:hover {
@@ -68,23 +74,24 @@ body {
     margin: 5px;
     border-radius: 5px;
     display: inline-block;
+    font-size: 1rem;
 }
 
-/* Buttons */
+/* Button Styling */
 button {
     padding: 10px 20px;
     margin: 10px;
     background-color: #00ffcc;
     color: black;
     border: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
 }
 
 button:hover {
     background-color: #008866;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Contact Text */
@@ -96,9 +103,10 @@ button:hover {
 .footer {
     background-color: #1f1f1f;
     padding: 10px;
-    position: fixed;
     width: 100%;
+    position: fixed;
     bottom: 0;
+    font-size: 0.9rem;
 }
 
 /* Responsive Design */
@@ -107,12 +115,12 @@ button:hover {
         width: 80px;
         height: 80px;
     }
-    
+
     .header h1 {
         font-size: 1.5rem;
     }
-    
+
     button {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
