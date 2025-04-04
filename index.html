@@ -5,55 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shubh Agarwal - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
-    <!-- Profile Section -->
-    <div class="profile">
-        <img src="image.png" alt="Shubh Agarwal" class="profile-pic">
+    <!-- Header Section -->
+    <header class="header">
+        <img src="profile.jpg" alt="Shubh Agarwal" class="profile-img">
         <h1>Shubh Agarwal</h1>
-        <p>BBA Student | Aspiring Finance & Risk Management Professional</p>
-        <a href="https://www.linkedin.com/in/shubhagarwal2005/" target="_blank" class="linkedin-btn">LinkedIn</a>
-    </div>
+        <p>Finance & Investment Enthusiast | Risk Management</p>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+            <a href="resume.pdf" download>Download Resume</a>
+        </div>
+    </header>
 
     <!-- About Me Section -->
-    <section class="about">
+    <section class="section">
         <h2>About Me</h2>
-        <p>I am a 2nd-year BBA student passionate about finance, investment banking, and risk management. I aim to enter high-paying finance roles and specialize in risk management.</p>
-    </section>
-
-    <!-- Education Section -->
-    <section class="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Institute of Business Management and Research (IBM)</strong> - BBA Finance (2023 - 2027)</li>
-            <li><strong>Garden High School</strong> - High School (2021 - 2023)</li>
-        </ul>
+        <p>Hi, I'm Shubh! A passionate BBA student aspiring to enter high-paying finance roles. Skilled in risk management, investment analysis, and financial modeling.</p>
     </section>
 
     <!-- Skills Section -->
-    <section class="skills">
-        <h2>Skills</h2>
+    <section class="section skills">
+        <h2>My Skills</h2>
         <ul>
-            <li>Financial Analysis & Data Interpretation</li>
-            <li>Investment Banking Fundamentals</li>
-            <li>Risk Management & Compliance</li>
-            <li>Microsoft Excel & Financial Modeling</li>
+            <li>📊 Financial Analysis</li>
+            <li>📈 Investment Banking</li>
+            <li>💰 Risk Management</li>
+            <li>📉 Stock Market Research</li>
+            <li>🖥️ Excel & Financial Modeling</li>
         </ul>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
+    <section class="section">
         <h2>Contact Me</h2>
-        <form id="contactForm">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <p id="messageStatus"></p>
+        <button id="contactBtn">Say Hello 👋</button>
+        <p id="contactText" class="hidden">Email me at: <strong>your.email@example.com</strong></p>
     </section>
 
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Shubh Agarwal | All Rights Reserved</p>
+    </footer>
+
 </body>
 </html>
